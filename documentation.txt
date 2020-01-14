@@ -1,0 +1,84 @@
+# POST requests have to be sent like this
+# in postman, select POST -> Body -> raw -> JSON
+
+//create user POST method
+ip:5000/createUser
+# {
+#     "username": "Kostas",
+#     "password": "123",
+#     "userType": "User"
+# }
+
+
+//login POST method
+ip:5000/login
+# {
+#     "username": "George",
+#     "password": "123",
+#     "userType": "EKABadmin"
+# }
+
+
+//defibrillators POST method (creates a new defibrillator)
+ip:5000/defibrillators
+{
+    "description": "Aristera ths eisodou, katw apo ta ksylina grammatokivotia",
+    "lat": "37.7971123",
+    "long": "26.7021942",
+    "name": "Kthrio Papanikolaou",
+    "photo": null,
+    "problemDescription": "den uparxei kanean provlhma",
+    "problemType": "kanena provlhma"
+}
+
+
+//updateDefibrillator PUT method (updates an existing defibrillator)
+//you can't update id, lat, long
+//This request will change the fields of name and description of the row we inserted above.
+ip:5000/updateDefibrillator
+{
+    "description": "To valame katw apo thn skala",
+    "lat": "37.7971123",
+    "long": "26.7021942",
+    "name": "Kthrio Papanikolaou Katw orofos"
+}
+
+
+//defibrillators GET method (get all the existing defibrillators)
+ip:5000/defibrillators
+{
+    "defibrillatorsList": [
+        {
+            "description": "dipla sto kioski twn taxiaaaa",
+            "id": 1,
+            "lat": "37.7918725",
+            "long": "26.7051805",
+            "name": "PlateiaKarlovasiaaa",
+            "photo": null,
+            "problemDescription": "den uparxei kanean provlhman",
+            "problemType": "kanena provlhma"
+        },
+        {
+            "description": "deksia apo thn porta",
+            "id": 2,
+            "lat": "37.793302",
+            "long": "26.698792",
+            "name": "Ghpedo Karlovasou",
+            "photo": null,
+            "problemDescription": "spasmeno kapaki alla einai plhrws leitourgikos",
+            "problemType": "elafria zhmia"
+        },
+        {
+            "description": "Aristera ths eisodou, katw apo ta ksylina grammatokivotia",
+            "id": 3,
+            "lat": "37.7971123",
+            "long": "26.7021942",
+            "name": "Kthrio Papanikolaou",
+            "photo": null,
+            "problemDescription": "den uparxei kanean provlhma",
+            "problemType": "kanena provlhma"
+        }
+    ]
+}
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DefibrillatorAPI.iml" filepath="$PROJECT_DIR$/.idea/DefibrillatorAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pyLearn/.idea/pyLearn.iml" filepath="$PROJECT_DIR$/../pyLearn/.idea/pyLearn.iml" />
+    </modules>
+  </component>
+</project>
